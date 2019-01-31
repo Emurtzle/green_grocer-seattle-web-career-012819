@@ -19,6 +19,7 @@ def consolidate_cart(cart)
       element[element.keys.first][:count] = 1
       new_hash[element.keys.first] = element[element.keys.first]
     else
+      binding.pry
       new_hash[element.keys.first][:count] += 1
     end
   end
