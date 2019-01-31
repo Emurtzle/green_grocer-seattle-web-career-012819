@@ -17,7 +17,7 @@ def consolidate_cart(cart)
   cart.each do |element|
     binding.pry
     if new_hash.keys.include?(element) == false
-
+      binding.pry
     else
 
     end
