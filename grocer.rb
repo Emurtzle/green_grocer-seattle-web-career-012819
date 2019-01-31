@@ -25,7 +25,7 @@ def apply_coupons(cart, coupons)
     else
       new_hash[k + " W/COUPON"] = {price: coupon[:cost], clearance: v[:clearance], count: coupon[:num]}
 
-      #binding.pry
+      binding.pry
     end
   end
 end
