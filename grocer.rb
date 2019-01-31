@@ -23,7 +23,7 @@ def apply_coupons(cart, coupons)
     if coupon == nil
       new_hash[k] = v
     else
-
+      binding.pry
     end
   end
 end
