@@ -23,7 +23,7 @@ def apply_coupons(cart, coupons)
     if coupon == nil
       new_hash[k] = v
     else
-      new_hash[k + " W/COUPON"] = {}
+      new_hash[k + " W/COUPON"] = {price: coupon[:cost], clearance: v[:clearance], count: coupon[:count]}
       binding.pry
     end
   end
