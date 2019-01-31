@@ -19,7 +19,12 @@ def apply_coupons(cart, coupons)
 
   cart.each do |k, v|
     coupon = coupons.find { |element| element[:item] == k}
-    binding.pry
+
+    if coupon == nil
+      new_hash[k] = v
+    else
+
+    end
   end
 end
 
