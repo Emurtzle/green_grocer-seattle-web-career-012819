@@ -15,7 +15,6 @@ def consolidate_cart(cart)
   new_hash = {}
 
   cart.each do |element|
-    binding.pry
     if new_hash.keys.include?(element) == false
       element[element.keys.first][:count] = 1
       new_hash[element.keys.first] = element[element.keys.first]
