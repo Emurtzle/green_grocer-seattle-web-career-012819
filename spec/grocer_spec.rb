@@ -39,6 +39,7 @@ describe "Grocer" do
       cart = [avocado, avocado, find_item('KALE')]
 
       result = consolidate_cart(cart)
+      binding.pry
       expect(result["AVOCADO"][:price]).to eq(3.00)
       expect(result["AVOCADO"][:clearance]).to eq(true)
       expect(result["AVOCADO"][:count]).to eq(2)
