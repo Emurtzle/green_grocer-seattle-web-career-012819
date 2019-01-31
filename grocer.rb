@@ -15,7 +15,11 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
+  new_hash = {}
 
+  cart.each do |element|
+    binding.pry
+  end
 end
 
 def apply_clearance(cart)
