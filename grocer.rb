@@ -18,6 +18,7 @@ def apply_coupons(cart, coupons)
   new_hash = {}
 
   cart.each do |k, v|
+    coupon = coupons.find { |element| element[:item] == k}
     binding.pry
   end
 end
