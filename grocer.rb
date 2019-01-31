@@ -17,7 +17,7 @@ end
 def apply_coupons(cart, coupons)
   new_hash = {}
 
-  cart.each do |element|
+  cart.each do |k, v|
     binding.pry
   end
 end
