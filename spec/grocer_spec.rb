@@ -1,3 +1,5 @@
+require "pry"
+
 describe "Grocer" do
   let(:items) do
     [
@@ -27,6 +29,7 @@ describe "Grocer" do
       cart = [find_item('TEMPEH'), find_item('PEANUTBUTTER'), find_item('ALMONDS')]
       result = consolidate_cart(cart)
       result.each do |item, attributes|
+        binding.pry
         expect(attributes.keys).to include(:count)
         expect(attributes[:count]).to eq(1)
       end
